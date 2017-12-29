@@ -14,6 +14,8 @@
 		4C8C65371FF4ED2700DA3B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8C65351FF4ED2700DA3B21 /* LaunchScreen.storyboard */; };
 		4C8C65421FF4ED2700DA3B21 /* AGDragDropTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C65411FF4ED2700DA3B21 /* AGDragDropTableViewCellTests.swift */; };
 		4C8C654D1FF4ED2700DA3B21 /* AGDragDropTableViewCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C654C1FF4ED2700DA3B21 /* AGDragDropTableViewCellUITests.swift */; };
+		4CA240701FF60076008626CC /* TopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA2406F1FF60076008626CC /* TopTableViewCell.swift */; };
+		4CA240721FF60080008626CC /* BottomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA240711FF60080008626CC /* BottomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4C8C65481FF4ED2700DA3B21 /* AGDragDropTableViewCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGDragDropTableViewCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8C654C1FF4ED2700DA3B21 /* AGDragDropTableViewCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGDragDropTableViewCellUITests.swift; sourceTree = "<group>"; };
 		4C8C654E1FF4ED2700DA3B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA2406F1FF60076008626CC /* TopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTableViewCell.swift; sourceTree = "<group>"; };
+		4CA240711FF60080008626CC /* BottomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		4C8C652B1FF4ED2700DA3B21 /* AGDragDropTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				4CA2406E1FF60063008626CC /* Cells */,
 				4C8C652C1FF4ED2700DA3B21 /* AppDelegate.swift */,
 				4C8C652E1FF4ED2700DA3B21 /* ViewController.swift */,
 				4C8C65301FF4ED2700DA3B21 /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				4C8C654E1FF4ED2700DA3B21 /* Info.plist */,
 			);
 			path = AGDragDropTableViewCellUITests;
+			sourceTree = "<group>";
+		};
+		4CA2406E1FF60063008626CC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4CA2406F1FF60076008626CC /* TopTableViewCell.swift */,
+				4CA240711FF60080008626CC /* BottomTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA240721FF60080008626CC /* BottomTableViewCell.swift in Sources */,
 				4C8C652F1FF4ED2700DA3B21 /* ViewController.swift in Sources */,
 				4C8C652D1FF4ED2700DA3B21 /* AppDelegate.swift in Sources */,
+				4CA240701FF60076008626CC /* TopTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
