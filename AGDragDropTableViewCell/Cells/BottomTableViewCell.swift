@@ -20,6 +20,11 @@ class BottomTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
+    override func layoutSubviews() {
+        self.imageViewProfile.layer.cornerRadius = self.imageViewProfile.frame.width / 2
+        self.imageViewProfile.layer.masksToBounds = true
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
