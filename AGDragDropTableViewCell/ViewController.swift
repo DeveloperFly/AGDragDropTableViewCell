@@ -75,6 +75,10 @@ extension ViewController: UITableViewDragDelegate {
         return [dragItem]
     }
     
+    func tableView(_ tableView: UITableView, dragPreviewParametersForRowAt indexPath: IndexPath) -> UIDragPreviewParameters? {
+        return previewParameters(forItemAt:indexPath)
+    }
+    
     /// Helper method
     private func dragItem(forPhotoAt indexPath: IndexPath) -> UIDragItem {
         let imageName = self.arrayFirst[indexPath.row]
@@ -84,10 +88,6 @@ extension ViewController: UITableViewDragDelegate {
         let dragItem = UIDragItem(itemProvider: itemProvider)
         dragItem.localObject = imageName
         return dragItem
-    }
-    
-    func tableView(_ tableView: UITableView, dragPreviewParametersForRowAt indexPath: IndexPath) -> UIDragPreviewParameters? {
-        return previewParameters(forItemAt:indexPath)
     }
     
     private func previewParameters(forItemAt indexPath:IndexPath) -> UIDragPreviewParameters? {
